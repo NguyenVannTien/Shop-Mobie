@@ -1,0 +1,138 @@
+
+.group-icon-header
+{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 56px;
+    height: 56px;
+    margin-top: 0;
+}
+.search-icon, .cart-icon
+{
+    margin-right: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.input-search-group{
+
+    display:  none;
+
+}
+.input-search
+{
+    height: 26px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    margin-right: 10px;
+    width: 170px;
+    animation: hiddenSearch linear 0.8s;
+}
+.search-btn
+{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search-btn i{
+    color: blue;
+}
+
+.open{
+
+}
+.close{
+    display: none;
+    animation: handleRotate linear 0.2s;
+}
+@keyframes handleRotate
+{
+    from{
+        transform: rotate(45deg);
+    }
+    to{       
+        transform: rotate(0);
+    }
+}
+@keyframes hiddenSearch {
+    from
+    {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.active{
+    display: inline-block;
+}
+.avatar-user-img{
+   width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    position: relative;
+}
+.avatar-user{
+    position: relative;
+}
+.avatar-user:hover .login-logout{
+    display: block;
+    cursor: pointer;
+}
+.login-logout{
+    background-color: #E9E9E7;
+    width: 186px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    text-align: left;
+    border-radius: 4px;
+    display: none;
+    z-index: 1000;
+}
+.login-logout::before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    top: -20px;
+    right: 0px;
+    position: absolute;
+}
+.login-logout-item{
+    display: block;
+    line-height: 1.6;
+    padding: 10px 10px;
+}
+.login-logout-item i{
+    width: 30px;
+    display: inline-block;
+}
+.login-logout hr{
+    margin: 0;
+}
+.logout{
+    color: red;
+}
+.login-logout-item img{
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name-user{
+    font-weight: 500;
+}

@@ -1,0 +1,11 @@
+.medium img{
+    width: 100% !important;
+    height: 200px !important;
+}
+.medium-img
+{
+    margin-top: 26px;
+}
+.medium{
+    position: relative;
+}
